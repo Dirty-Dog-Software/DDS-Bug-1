@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3429F5524BA47FD0063A91F /* DDSViewLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C3429F5424BA47FD0063A91F /* DDSViewLibrary */; };
 		C3CA788B24BA339F00DC61CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA788A24BA339F00DC61CD /* AppDelegate.swift */; };
 		C3CA788D24BA339F00DC61CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA788C24BA339F00DC61CD /* SceneDelegate.swift */; };
 		C3CA788F24BA339F00DC61CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA788E24BA339F00DC61CD /* ViewController.swift */; };
 		C3CA789224BA339F00DC61CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA789024BA339F00DC61CD /* Main.storyboard */; };
 		C3CA789424BA33A200DC61CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CA789324BA33A200DC61CD /* Assets.xcassets */; };
 		C3CA789724BA33A200DC61CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA789524BA33A200DC61CD /* LaunchScreen.storyboard */; };
+		C3CA789F24BA342B00DC61CD /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA789E24BA342B00DC61CD /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		C3CA789324BA33A200DC61CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3CA789624BA33A200DC61CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3CA789824BA33A200DC61CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CA789E24BA342B00DC61CD /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3429F5524BA47FD0063A91F /* DDSViewLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				C3CA788A24BA339F00DC61CD /* AppDelegate.swift */,
 				C3CA788C24BA339F00DC61CD /* SceneDelegate.swift */,
 				C3CA788E24BA339F00DC61CD /* ViewController.swift */,
+				C3CA789E24BA342B00DC61CD /* BorderedButton.swift */,
 				C3CA789024BA339F00DC61CD /* Main.storyboard */,
 				C3CA789324BA33A200DC61CD /* Assets.xcassets */,
 				C3CA789524BA33A200DC61CD /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "DDS Bug 1";
+			packageProductDependencies = (
+				C3429F5424BA47FD0063A91F /* DDSViewLibrary */,
+			);
 			productName = "DDS Bug 1";
 			productReference = C3CA788724BA339F00DC61CD /* DDS Bug 1.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = C3CA787E24BA339F00DC61CD;
+			packageReferences = (
+				C3429F5324BA47FD0063A91F /* XCRemoteSwiftPackageReference "DDSViewLibrary" */,
+			);
 			productRefGroup = C3CA788824BA339F00DC61CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3CA788F24BA339F00DC61CD /* ViewController.swift in Sources */,
+				C3CA789F24BA342B00DC61CD /* BorderedButton.swift in Sources */,
 				C3CA788B24BA339F00DC61CD /* AppDelegate.swift in Sources */,
 				C3CA788D24BA339F00DC61CD /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3429F5324BA47FD0063A91F /* XCRemoteSwiftPackageReference "DDSViewLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dirty-Dog-Software/DDSViewLibrary.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3429F5424BA47FD0063A91F /* DDSViewLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3429F5324BA47FD0063A91F /* XCRemoteSwiftPackageReference "DDSViewLibrary" */;
+			productName = DDSViewLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3CA787F24BA339F00DC61CD /* Project object */;
 }

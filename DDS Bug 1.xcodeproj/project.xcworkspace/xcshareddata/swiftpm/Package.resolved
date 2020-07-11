@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DDSViewLibrary",
+        "repositoryURL": "https://github.com/Dirty-Dog-Software/DDSViewLibrary.git",
+        "state": {
+          "branch": null,
+          "revision": "26ba1c263db9fba66d23a8417d6b5c4fa20ead44",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
