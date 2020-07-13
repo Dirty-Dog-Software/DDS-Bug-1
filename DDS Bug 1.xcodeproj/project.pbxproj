@@ -27,6 +27,7 @@
 		C3CA789624BA33A200DC61CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3CA789824BA33A200DC61CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3CA789E24BA342B00DC61CD /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		C3EFE44724BA758700C671A8 /* DDSViewLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DDSViewLibrary; path = ../DDSViewLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		C3CA787E24BA339F00DC61CD = {
 			isa = PBXGroup;
 			children = (
+				C3EFE44724BA758700C671A8 /* DDSViewLibrary */,
 				C3CA788924BA339F00DC61CD /* DDS Bug 1 */,
 				C3CA788824BA339F00DC61CD /* Products */,
 			);
